@@ -1,0 +1,31 @@
+/* --- ADD THIS TO THE BOTTOM of src/components/Navbar.css --- */
+
+.nav-tokens {
+  background-color: #d4dfe3; /* New light grey */
+  color: #2c4a58; /* New very dark blue */
+  padding: 0.5rem 0.75rem; /* 8px 12px */
+  border-radius: 8px; /* rounded-lg */
+  display: none; /* Hide on mobile by default */
+  align-items: center;
+  gap: 0.5rem; /* 8px */
+  font-weight: 600; /* semibold */
+  font-size: 0.875rem; /* sm */
+}
+
+/* --- Also, update your @media (min-width: 768px) rule --- */
+/* --- Find this rule and add .nav-tokens to it --- */
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+  }
+  .nav-button {
+    display: block;
+  }
+  .nav-tokens {
+    display: flex; /* <-- ADD THIS LINE */
+  }
+}
